@@ -21,5 +21,8 @@ static class TaiFormula {
             arr[i][0] = io.nextInt();
             arr[i][1] = io.nextDouble(); 
         }
+
+        //calculate the area under the curve at each point
+        //Do i actually need an integral for that?
     }
 }
