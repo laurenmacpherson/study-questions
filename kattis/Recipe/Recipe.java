@@ -13,19 +13,9 @@ public class Recipe {
             //note the portions MUST be in double format in case dividing one by the other results in something fractional 
             int numIngredients = in.nextInt(); double defaultPortion = in.nextDouble(); double desiredPortion = in.nextDouble();
             in.nextLine(); 
-
-            System.out.println("# ingredients: " + numIngredients); 
-            System.out.println("defaultPortion: " + defaultPortion); 
-            System.out.println("desiredPortion: " + desiredPortion); 
             
             double scalingFactor = desiredPortion/defaultPortion; //double to get fractional # 
             Object[][] ingrList = new Object[numIngredients][2]; 
-
-            System.out.println(desiredPortion/defaultPortion); 
-            System.out.println("# ingredients: " + numIngredients); 
-            System.out.println("defaultPortion: " + defaultPortion); 
-            System.out.println("desiredPortion: " + desiredPortion); 
-            System.out.println("Scaling factor: " + scalingFactor); 
 
             //grab ingredients
             for (int i = 0; i < numIngredients; i++){
@@ -43,8 +33,6 @@ public class Recipe {
                     mainIngrIndex = i; 
                     mainFound = true; 
                     mainWeight = (double) ingrList[i][1];
-                    System.out.println("MAIN WEIGHT: " + mainWeight); 
-                    System.out.println(); 
                 }
                 else {
                     //assess time complexity here, 
