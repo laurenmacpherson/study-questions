@@ -17,3 +17,6 @@ For Recipes.java:
     Array[percentage][name]
 
     loop will remember the index of %100 
+
+    Method for testing Kattis example files using scanner: 
+    https://stackoverflow.com/questions/28468151/how-to-read-a-text-file-in-to-a-scanner-using-command-line-in-java
