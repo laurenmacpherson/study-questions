@@ -1,0 +1,17 @@
+Consists of an N by M grid
+some are land, some are water
+at most 1 coffee shop can be built on a land cell 
+
+constraints: 
+1. each land cell must have a coffee shop or be next to one 
+2. no two coffee shops can be next to each other 
+
+n is rows 
+m is columns 
+
+format: 
+(rows) (columns)
+and then (n) rows 
+
+. is land 
+# is water 

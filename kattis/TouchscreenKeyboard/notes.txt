@@ -1,0 +1,25 @@
+q w e r t y u i o p
+a s d f g h j k l
+z x c v b n m
+
+distance from w to e is 1 
+distance from w to z is 3
+
+totalDist = sum of letter distances 
+
+format: 
+
+number of test cases (1-19 inclusive)
+(typed word) (number of entries on spell checker list 1-10 inclusive)
+
+all words in the test case are the same length and all are only lowercase. each word appears exactly once in the spell checker list 
+
+the test case/typed word is the one all of the alternatives can be tested against 
+
+For each test case, print the list of words 
+**sorted by their distance ascending**. 
+
+If two words have the same distance, sort them alphabetically. Print the distance of each word in the same line.
+
+-order matters 
+-use objects? 
