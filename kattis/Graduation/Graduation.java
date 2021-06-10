@@ -37,5 +37,31 @@ public class Graduation {
         */ //testing purposes
     }
 
-    public static boolean r
+    public static String columnCheck(char[][] arr){ //check each column for matching 
+
+        //return a map instead? 
+        //need to check for if there's a full column, and only add a color is that char doesn't occur in a mixed row 
+        String classesFound = ""; 
+        char current, previous; 
+        for (int i = 0; i < arr[1].length; i++){ //arr[1].length checks # of cols 
+            for (int j = 1; j < arr.length; j++){//rows
+                current = arr[j][i]; 
+                previous = arr[j-1][i]; 
+
+                //adds to string if not already there 
+                if (!classesFound.contains(""+current)){
+                    classesFound += (current + " "); 
+                }
+                if (!classesFound.contains(""+previous)){
+                    classesFound += (previous + " "); 
+                }
+
+                if (arr[j][i] == arr[j-1][i]){ //char is equal to the one from the row above
+                    continue; 
+                }
+
+            }
+        }
+        return " ";
+    }
 }
