@@ -1,0 +1,19 @@
+For Recipes.java: 
+
+    Scaling factor = (# of desired portions)/(# of default portions)
+
+    Main Scaled Weight = (weight of main ingredient)*(scaling factor)
+
+    For each other ingredient: 
+        Scaled Weight = (Baker's %)*(Main Scaled Weight)
+
+    Input format: 
+        # of Recipes
+        [# of ingredients] [default portions] [desired portions]
+        <Ingredient name> <weight> <percentage>
+
+    Use 2D array because we know the # of things used and we don't need to be searching (order also matters) 
+
+    Array[percentage][name]
+
+    loop will remember the index of %100 
